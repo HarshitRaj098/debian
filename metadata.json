@@ -1,0 +1,8 @@
+{
+  "name": "AETHER OS",
+  "description": "Bare-Metal Computer Laboratory with real Linux userspace and terminal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

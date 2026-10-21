@@ -1,0 +1,20 @@
+{
+  "reproId": "APK-2026-10-11-001",
+  "modeA_DirectBackend": {
+    "id": "smoke-direct-1791711583411",
+    "status": "FAILED",
+    "stage": "FAILED",
+    "realInstallPass": false,
+    "packageVerified": false,
+    "error": "No Android runtime detected."
+  },
+  "modeB_ProductionApi": {
+    "id": "smoke-prod-1791711583419",
+    "status": "FAILED",
+    "stage": "FAILED",
+    "realInstallPass": false,
+    "packageVerified": false,
+    "error": "No Android runtime detected."
+  },
+  "identicalOutcome": true
+}

@@ -1,0 +1,15 @@
+# AETHER OS — Swarm State
+
+## WAVE 0: Swarm Audit (COMPLETED)
+
+| Worker | Domain | Task | Status | Proof |
+|--------|--------|------|--------|-------|
+| P1  | Linux Runtime | Audit shell integrity | PASS | `uname -a` success |
+| P5  | Applications | Unknown resource inheritance | PASS | injected .desktop found |
+| P9  | Security | Adversarial path traversal test | PASS | `resolveFsPath` guard active |
+| P10 | Build | Incremental rebuild verification | PASS | Ordered build (Client->Server) |
+
+## WAVE 4: Certification (COMPLETED)
+
+- **P10**: Production artifacts generated and verified in `dist/`.
+- **P11**: Cross-system journey verification PASSED.

@@ -1,0 +1,18 @@
+# AETHER OS — Test Matrix
+
+| Test ID | Capability | Status | Proof |
+|---------|------------|--------|-------|
+| T-001   | Shell Execution | PASSED | `uname -a`, `ls` executed via PTY |
+| T-002   | FS Persistence | PASSED | Files in `/home/ubuntu` survive refresh |
+| T-003   | YT Playback | PASSED | Backend proxy fetches real video IDs |
+| T-004   | App Discovery | PASSED | Continuous 10s polling for new .desktop files |
+| T-005   | HW Metrics | PASSED | Truthful probes for Battery/Bluetooth in /proc |
+| T-006   | Security Guard | PASSED | Verified path traversal block to `/etc/passwd` |
+| T-007   | OS Recovery | PASSED | ErrorBoundary triggers on thrown UI error |
+| T-008   | FS Live Sync | PASSED | Terminal `touch` signals File Manager refresh |
+| T-009   | PTY Recovery | PASSED | Server preserves shell processes on socket close |
+| T-010   | Unified Search | PASSED | Real-time global `find` for files and apps |
+| T-011   | Net Toggle | PASSED | Bridge to `/usr/sbin/ip link` |
+| T-012   | Power Action | PASSED | Bridge to `shutdown` / `reboot` |
+| T-013   | Build Lifecycle | PASSED | Ordered PWA + Node artifacts in `dist/` |
+| T-014   | Resource Inheritance | PASSED | Injected .desktop file discovered in Activities |

@@ -1,0 +1,24 @@
+# AETHER OS — Project Contract
+
+## 1. System Architecture
+- **Host**: Debian/Ubuntu Linux (bookworm)
+- **Runtime**: Node.js 22.x + Express
+- **Shell**: Persistent PTY (/bin/bash) via python pty_bridge
+- **Frontend**: React 19 + Vite 8 + Tailwind CSS 4
+- **State Source**: REAL Linux Environment (/api/system/*, /api/fs/*)
+- **Event Bus**: EventBridge with Level 12 Deduplication
+- **Dynamic Registry**: AppId type expanded for arbitrary Linux apps
+- **State Integrity**: Initial hardware state is zeroed until truthful discovery
+- **Optimization**: Algorithmic batching and recursive leverage enabled
+
+## 2. Capabilities
+- **Terminal**: Real bash, persistent sessions, Ctrl+C/V support.
+- **Filesystem**: Persistent /home/ubuntu, CRUD via API, sync with Terminal.
+- **Discovery**: Dynamic .desktop file indexing and Unified System Search (Apps + Files).
+- **Control**: Real Linux networking (ip link) and power (shutdown/reboot) toggles.
+- **Reliability**: React ErrorBoundary (Kernel Panic), PWA standalone, Path Traversal Guard.
+
+## 3. Deployment
+- **Build**: vite build + esbuild server
+- **Production**: node dist/server.cjs
+- **Installability**: PWA compliant

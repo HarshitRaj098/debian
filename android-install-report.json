@@ -1,0 +1,150 @@
+{
+  "reproId": "APK-2026-10-11-001",
+  "installId": "smoke-direct-1791711583411",
+  "timestamp": "2026-10-11T09:39:43.428Z",
+  "apk": {
+    "path": "/home/ubuntu/Downloads/com.example.testapk.apk",
+    "sha256": "a7d2563a6050f824c9066700b758fe0254a392905a72a059dce840503fb43d99",
+    "size": 3102,
+    "packageName": "com.user.comexampletestapk",
+    "versionCode": 1,
+    "versionName": "1.0.0"
+  },
+  "environment": {
+    "os": "Linux",
+    "distribution": "Debian GNU/Linux 12 (bookworm)",
+    "platform": "linux",
+    "architecture": "x64",
+    "hostname": "localhost",
+    "username": "root",
+    "uid": 0,
+    "gid": 0,
+    "privileges": {
+      "isRoot": true,
+      "uid": 0,
+      "gid": 0
+    },
+    "packageManager": "apt",
+    "cpu": {
+      "model": "unknown",
+      "cores": 2,
+      "loadAvg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ram": {
+      "totalMb": 5120,
+      "freeMb": 2467,
+      "usedMb": 2653
+    },
+    "disk": {
+      "totalGb": 1512,
+      "availGb": 1510,
+      "mountPoint": "/"
+    },
+    "gpu": {
+      "driNodes": [],
+      "available": false
+    },
+    "displayServer": {
+      "type": "HEADLESS",
+      "waylandDisplay": null,
+      "x11Display": null,
+      "systemdActive": false,
+      "dbusSystemSocket": true
+    },
+    "shell": "/bin/bash",
+    "cwd": "/app/applet",
+    "PATH": "/app/applet/node_modules/.bin:/app/applet/node_modules/.bin:/app/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "home": "/root",
+    "tempDirectory": "/tmp",
+    "filesystemBoundaries": {
+      "writableTmp": true,
+      "writableHome": true,
+      "procFilesystems": [
+        "sysfs",
+        "mqueue",
+        "erofs",
+        "cgroup",
+        "devtmpfs",
+        "9p",
+        "overlay",
+        "proc",
+        "tmpfs",
+        "devpts",
+        "fuse",
+        "ramdiskfs"
+      ],
+      "hasBinderFilesystem": false,
+      "hasBinderDeviceNode": false
+    },
+    "network": {
+      "interfaces": [
+        "lo",
+        "eth1",
+        "eth2"
+      ],
+      "ipv4Addresses": [
+        "169.254.8.1",
+        "169.254.9.1",
+        "169.254.169.1"
+      ]
+    },
+    "processId": 15880,
+    "parentProcessId": 15869,
+    "nodeVersion": "v22.23.2",
+    "runtimeVersion": "12.4.254.21-node.56",
+    "containerDetection": {
+      "isDocker": false,
+      "isGvisor": true,
+      "hasDockerEnv": false,
+      "hasDockerFile": false
+    },
+    "virtualizationDetection": {
+      "isWsl": false,
+      "kernelRelease": "4.19.0-gvisor"
+    },
+    "backendStartTime": "2026-10-11T09:39:43.409Z"
+  },
+  "runtime": {
+    "type": "None",
+    "ready": false,
+    "reason": "No Android runtime detected."
+  },
+  "stages": [
+    {
+      "stage": "VALIDATE",
+      "startedAt": "2026-10-11T09:39:43.410Z",
+      "finishedAt": "2026-10-11T09:39:43.410Z",
+      "durationMs": 0,
+      "status": "PASS"
+    },
+    {
+      "stage": "RUNTIME_HEALTH",
+      "startedAt": "2026-10-11T09:39:43.410Z",
+      "finishedAt": "2026-10-11T09:39:43.411Z",
+      "durationMs": 1,
+      "status": "FAIL",
+      "error": "No Android runtime detected."
+    }
+  ],
+  "failureSignature": "RUNTIME_HEALTH|None|127|RUNTIME_NOT_INSTALLED",
+  "result": {
+    "directBackendPass": false,
+    "productionApiPass": false,
+    "realInstallPass": false,
+    "packageVerified": false,
+    "launchVerified": false,
+    "finalStatus": "DETERMINISTIC_EXTERNAL_BLOCKER"
+  },
+  "firstFailure": {
+    "stage": "RUNTIME_HEALTH",
+    "errorCode": "RUNTIME_NOT_INSTALLED",
+    "exitCode": 127,
+    "rawStderr": "No Android runtime detected.",
+    "rootCause": "NO_RUNTIME_AVAILABLE",
+    "fix": "Install Waydroid or ADB emulator."
+  }
+}

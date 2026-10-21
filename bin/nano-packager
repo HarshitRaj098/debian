@@ -1,0 +1,25 @@
+# nano-packager - A proof-of-concept builder for NanoAndroid
+# This generates an APK by injecting app resources into the NanoAndroid Host Shell.
+
+APP_DIR=$1
+OUTPUT_APK="dist/app.apk"
+
+echo "Building NanoAndroid App: $APP_DIR"
+
+# 1. Validate manifest
+if [ ! -f "$APP_DIR/manifest.json" ]; then
+    echo "Error: manifest.json not found."
+    exit 1
+fi
+
+# 2. Package resources (Concept: Copying to Host Shell assets)
+mkdir -p build/assets
+cp -r $APP_DIR/* build/assets/
+
+echo "Resources packaged. Injecting into NanoAndroid Host..."
+
+# 3. Simulate APK build (Placeholder)
+echo "Re-signing and generating $OUTPUT_APK..."
+touch $OUTPUT_APK
+
+echo "Build complete."

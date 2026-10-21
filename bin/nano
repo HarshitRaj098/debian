@@ -1,0 +1,21 @@
+#!/bin/bash
+# NanoAndroid JS CLI
+
+case "$1" in
+  create)
+    echo "Scaffolding my-app..."
+    mkdir -p my-app
+    cat <<EOF > my-app/app.js
+const app = Nano.app();
+app.start();
+EOF
+    echo "App created."
+    ;;
+  run)
+    echo "Running app on Cloud Android..."
+    # Placeholder for forwarding to the gateway
+    ;;
+  *)
+    echo "Usage: nano {create|run|build|install}"
+    ;;
+esac
